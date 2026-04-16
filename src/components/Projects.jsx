@@ -18,8 +18,8 @@ export default function Projects() {
     },
     {
       image: project3,
-      link: "https://gojekeren.vercel.app/",
-      title: "UI Gojek",
+      link: "https://portofolio-next-js-adan.vercel.app/",
+      title: "Simple portofolio",
     },
     {
       image: project4,
@@ -49,7 +49,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="section">
-      <h2 className="section-title projects-title">Projects</h2>
+      <h2 className="section-title projects-title">Project</h2>
 
       <div className="projects-grid">
         {projects.map((item, index) => (
