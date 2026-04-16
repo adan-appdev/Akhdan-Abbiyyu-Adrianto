@@ -23,8 +23,8 @@ export default function Projects() {
     },
     {
       image: project4,
-      link: "https://travelapp-theta-drab.vercel.app/",
-      title: "Aplikasi Travel",
+      link: "https://ui-yumit.vercel.app/",
+      title: "Landing Page Website Promosi",
     },
   ];
 
