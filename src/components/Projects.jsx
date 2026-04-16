@@ -13,8 +13,8 @@ export default function Projects() {
     },
     {
       image: project2,
-      link: "https://mind-ease-roan.vercel.app/",
-      title: "Mind Ease",
+      link: "https://coffe-shop-kalcer-edbs.vercel.app/",
+      title: "Coffe Shop",
     },
     {
       image: project3,
