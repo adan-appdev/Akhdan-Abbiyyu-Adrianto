@@ -29,13 +29,13 @@ export default function Projects() {
     },
     {
       image: project5,
-      link: "#",
-      title: "UI Dashboard App",
+      link: "https://bendahara-sage.vercel.app/",
+      title: "website Bendahara Kelas",
     },
     {
       image: project6,
-      link: "#",
-      title: "Mobile App Concept",
+      link: "https://traveling-for-touris-54eq.vercel.app/",
+      title: "Travel App UI",
     },
   ];
 
