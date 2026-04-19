@@ -1,8 +1,9 @@
-import { useRef } from "react";
 import project1 from "../assets/project1.jpg";
 import project2 from "../assets/project2.jpg";
 import project3 from "../assets/project3.jpg";
 import project4 from "../assets/project4.jpg";
+import project5 from "../assets/project5.jpg";
+import project6 from "../assets/project6.jpg";
 
 export default function Projects() {
   const projects = [
@@ -14,17 +15,27 @@ export default function Projects() {
     {
       image: project2,
       link: "https://coffe-shop-kalcer-edbs.vercel.app/",
-      title: "Coffe Shop",
+      title: "Coffee Shop",
     },
     {
       image: project3,
       link: "https://portofolio-next-js-adan.vercel.app/",
-      title: "Simple portofolio",
+      title: "Simple Portfolio",
     },
     {
       image: project4,
       link: "https://ui-yumit.vercel.app/",
-      title: "Landing Page Website Promosi",
+      title: "Landing Page Promosi",
+    },
+    {
+      image: project5,
+      link: "#",
+      title: "UI Dashboard App",
+    },
+    {
+      image: project6,
+      link: "#",
+      title: "Mobile App Concept",
     },
   ];
 
@@ -40,11 +51,11 @@ export default function Projects() {
     const rotateY = (centerX - x) / 20;
 
     card.style.transform =
-      `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
   };
 
   const resetTilt = (card) => {
-    card.style.transform = "rotateX(0) rotateY(0)";
+    card.style.transform = "rotateX(0) rotateY(0) scale(1)";
   };
 
   return (

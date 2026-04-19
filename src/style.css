@@ -491,6 +491,27 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* Skill Header */
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.skill-percent {
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: linear-gradient(90deg, #a855f7, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 /* ===============================
@@ -802,4 +823,111 @@ footer {
 }
 .scroll-top {
   bottom: 40px;
+}
+
+/* ==================================================
+   MOBILE OPTIMIZATION PACK
+================================================== */
+
+@media (max-width: 768px) {
+
+  /* Section spacing lebih kecil */
+  .section {
+    margin: 60px 20px;
+    padding: 60px 25px;
+    border-radius: 25px;
+  }
+
+  /* Hero jadi vertical */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 25px;
+    gap: 50px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .typing {
+    font-size: 1.2rem;
+  }
+
+  .hero-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Navbar rapihin */
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar ul {
+    gap: 15px;
+    font-size: 0.85rem;
+  }
+
+  /* About Skills jadi 1 kolom */
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  /* Education jadi 1 kolom */
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Achievement jadi 1 kolom */
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Projects jadi 1 kolom */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    height: 220px;
+  }
+
+  /* Contact rapihin */
+  .socials {
+    gap: 25px;
+  }
+
+  .social-card {
+    width: 60px;
+    height: 60px;
+  }
+
+  .social-card svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Scroll top button lebih kecil */
+  .scroll-top {
+    width: 45px;
+    height: 45px;
+    right: 20px;
+    bottom: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .typing {
+    font-size: 1rem;
+  }
 }
