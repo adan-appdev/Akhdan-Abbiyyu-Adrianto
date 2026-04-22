@@ -439,8 +439,8 @@ footer {
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
   margin-top: 50px;
 }
 
@@ -492,12 +492,7 @@ footer {
   }
 }
 /* Skill Header */
-.skill-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-}
+
 
 .skill-name {
   font-size: 1rem;
@@ -505,13 +500,6 @@ footer {
   color: #e2e8f0;
 }
 
-.skill-percent {
-  font-size: 0.9rem;
-  font-weight: 500;
-  background: linear-gradient(90deg, #a855f7, #3b82f6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 
 /* ===============================
@@ -609,13 +597,20 @@ footer {
   0% { background-position: 0% 50%; }
   100% { background-position: 200% 50%; }
 }
+.project-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+  transition: 0.4s ease;
+  aspect-ratio: 16 / 9;   /* 🔥 paksa landscape */
+}
 
 .project-card img {
   width: 100%;
-  height: 260px;
-  object-fit: cover;
-  transition: 0.5s ease;
-  border-radius: 20px;
+  height: 100%;
+  object-fit: cover;  /* tetap crop biar penuh */
+  transition: 0.6s ease;
 }
 
 /* Overlay */
@@ -930,6 +925,67 @@ footer {
   .typing {
     font-size: 1rem;
   }
+}
+
+/* ==================================================
+   PROJECT BUTTONS STYLE
+================================================== */
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 15, 26, 0.75);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.project-overlay h3 {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.project-buttons a {
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+/* Demo Button */
+.btn-demo {
+  background: linear-gradient(135deg, #a855f7, #3b82f6);
+  color: white;
+}
+
+.btn-demo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.8);
+}
+
+/* Repo Button */
+.btn-repo {
+  border: 1px solid #a855f7;
+  color: #a855f7;
+  background: transparent;
+}
+
+.btn-repo:hover {
+  background: #a855f7;
+  color: white;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
 }
 
 

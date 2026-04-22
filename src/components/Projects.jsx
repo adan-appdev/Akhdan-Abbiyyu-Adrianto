@@ -1,3 +1,8 @@
+import project10 from "../assets/project10.jpg";
+import project8 from "../assets/project8.jpg";
+import project7 from "../assets/project7.jpg";
+import project9 from "../assets/project9.jpg";
+import project11 from "../assets/project11.jpg";
 import project1 from "../assets/project1.jpg";
 import project2 from "../assets/project2.jpg";
 import project3 from "../assets/project3.jpg";
@@ -6,35 +11,67 @@ import project5 from "../assets/project5.jpg";
 import project6 from "../assets/project6.jpg";
 
 export default function Projects() {
+
   const projects = [
     {
+      image: project10,
+      repo: "https://github.com/adan-appdev/ui-telkomsel",
+      title: "UI Telkomsel Flutter",
+    },
+    {
+      image: project8,
+      repo: "https://github.com/adan-appdev/travelapp",
+      title: "Travel App UI Flutter",
+    },
+    {
+      image: project7,
+      repo: "https://github.com/adan-appdev/gojekeren",
+      title: "Gojek UI Flutter",
+    },
+    {
+      image: project9,
+      repo: "https://github.com/adan-appdev/aplikasi-mahasiswa",
+      title: "Aplikasi Mahasiswa Flutter",
+    },
+    {
+      image: project11,
+      repo: "https://github.com/adan-appdev/ui-telkomsel",
+      title: "UI Telkomsel Flutter",
+    },
+    {
       image: project1,
-      link: "https://jelajah-nusantara-mocha.vercel.app",
+      demo: "https://jelajah-nusantara-mocha.vercel.app",
+      repo: "https://github.com/adan-appdev/Jelajah-Nusantara",
       title: "Jelajah Nusantara",
     },
     {
       image: project2,
-      link: "https://coffe-shop-kalcer-edbs.vercel.app/",
+      demo: "https://coffe-shop-kalcer-edbs.vercel.app/",
+      repo: "https://github.com/adan-appdev/coffe-shop-kalcer",
       title: "Coffee Shop",
     },
     {
       image: project3,
-      link: "https://portofolio-next-js-adan.vercel.app/",
+      demo: "https://portofolio-next-js-adan.vercel.app/",
+      repo: "https://github.com/adan-appdev/portofolio-next-js",
       title: "Simple Portfolio",
     },
     {
       image: project4,
-      link: "https://ui-yumit.vercel.app/",
+      demo: "https://ui-yumit.vercel.app/",
+      repo: "https://github.com/adan-appdev/UI-Yumit",
       title: "Landing Page Promosi",
     },
     {
       image: project5,
-      link: "https://bendahara-sage.vercel.app/",
-      title: "website Bendahara Kelas",
+      demo: "https://bendahara-sage.vercel.app/",
+      repo: "https://github.com/adan-appdev/bendahara",
+      title: "Website Bendahara Kelas",
     },
     {
       image: project6,
-      link: "https://traveling-for-touris-54eq.vercel.app/",
+      demo: "https://traveling-for-touris-54eq.vercel.app/",
+      repo: "https://github.com/adan-appdev/travel",
       title: "Travel App UI",
     },
   ];
@@ -47,8 +84,8 @@ export default function Projects() {
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
-    const rotateX = (y - centerY) / 20;
-    const rotateY = (centerX - x) / 20;
+    const rotateX = (y - centerY) / 30;
+    const rotateY = (centerX - x) / 30;
 
     card.style.transform =
       `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
@@ -64,11 +101,8 @@ export default function Projects() {
 
       <div className="projects-grid">
         {projects.map((item, index) => (
-          <a
+          <div
             key={index}
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
             className="project-card"
             onMouseMove={(e) => handleMove(e, e.currentTarget)}
             onMouseLeave={(e) => resetTilt(e.currentTarget)}
@@ -77,9 +111,32 @@ export default function Projects() {
 
             <div className="project-overlay">
               <h3>{item.title}</h3>
-              <span>View Project</span>
+
+              <div className="project-buttons">
+
+                {item.demo && (
+                  <a
+                    href={item.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-demo"
+                  >
+                    Live Demo
+                  </a>
+                )}
+
+                <a
+                  href={item.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-repo"
+                >
+                  View Repo
+                </a>
+
+              </div>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </section>

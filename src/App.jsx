@@ -45,7 +45,6 @@ function App() {
       <About />
       <Education />
       <Projects />
-      <Achievements />
       <Contact />
       <Footer />
 

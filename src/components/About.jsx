@@ -15,17 +15,18 @@ export default function About() {
 
 <div className="skills">
   {[
-    { name: "React", level: 95 },
-    { name: "Flutter", level: 90 },
-    { name: "UI/UX", level: 80 },
-    { name: "Graphic Design", level: 98 },
+    { name: "React", level: 100 },
+    { name: "Flutter", level: 100 },
+    { name: "Next.js", level: 100 },
+    { name: "Tailwind CSS", level: 100 },
+    { name: "PostgreSQL", level: 100 },
+    { name: "Node.js", level: 100 },
+    { name: "Vite", level: 100 },
+    { name: "Java", level: 100 },
   ].map((skill, i) => (
     <div key={i} className="skill-card">
       
-      <div className="skill-header">
-        <span className="skill-name">{skill.name}</span>
-        <span className="skill-percent">{skill.level}%</span>
-      </div>
+      <span className="skill-name">{skill.name}</span>
 
       <div className="progress">
         <div
