@@ -3,6 +3,7 @@ import project8 from "../assets/project8.jpg";
 import project7 from "../assets/project7.jpg";
 import project9 from "../assets/project9.jpg";
 import project11 from "../assets/project11.jpg";
+import project12 from "../assets/project12.jpg";
 import project1 from "../assets/project1.jpg";
 import project2 from "../assets/project2.jpg";
 import project3 from "../assets/project3.jpg";
@@ -13,11 +14,7 @@ import project6 from "../assets/project6.jpg";
 export default function Projects() {
 
   const projects = [
-    {
-      image: project10,
-      repo: "https://github.com/adan-appdev/ui-telkomsel",
-      title: "UI Telkomsel Flutter",
-    },
+
     {
       image: project8,
       repo: "https://github.com/adan-appdev/travelapp",
@@ -29,20 +26,30 @@ export default function Projects() {
       title: "Gojek UI Flutter",
     },
     {
-      image: project9,
-      repo: "https://github.com/adan-appdev/aplikasi-mahasiswa",
-      title: "Aplikasi Mahasiswa Flutter",
+      image: project11,
+      repo: "https://github.com/adan-appdev/bpmrate",
+      title: "BPM Rate App",
     },
     {
       image: project11,
-      repo: "https://github.com/adan-appdev/ui-telkomsel",
-      title: "UI Telkomsel Flutter",
+      repo: "https://github.com/adan-appdev/flower-shop",
+      title: "Flower Shop ",
     },
     {
       image: project1,
       demo: "https://jelajah-nusantara-mocha.vercel.app",
       repo: "https://github.com/adan-appdev/Jelajah-Nusantara",
       title: "Jelajah Nusantara",
+    },
+    {
+      image: project9,
+      repo: "https://github.com/adan-appdev/aplikasi-mahasiswa",
+      title: "Aplikasi Mahasiswa Flutter",
+    },
+        {
+      image: project10,
+      repo: "https://github.com/adan-appdev/ui-telkomsel",
+      title: "UI Telkomsel Flutter",
     },
     {
       image: project2,
