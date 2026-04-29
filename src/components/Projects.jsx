@@ -1,4 +1,4 @@
-import project10 from "../assets/project10.jpg";
+
 import project8 from "../assets/project8.jpg";
 import project7 from "../assets/project7.jpg";
 import project9 from "../assets/project9.jpg";
@@ -31,7 +31,7 @@ export default function Projects() {
       title: "BPM Rate App",
     },
     {
-      image: project11,
+      image: project12,
       repo: "https://github.com/adan-appdev/flower-shop",
       title: "Flower Shop ",
     },
@@ -46,11 +46,7 @@ export default function Projects() {
       repo: "https://github.com/adan-appdev/aplikasi-mahasiswa",
       title: "Aplikasi Mahasiswa Flutter",
     },
-        {
-      image: project10,
-      repo: "https://github.com/adan-appdev/ui-telkomsel",
-      title: "UI Telkomsel Flutter",
-    },
+
     {
       image: project2,
       demo: "https://coffe-shop-kalcer-edbs.vercel.app/",
