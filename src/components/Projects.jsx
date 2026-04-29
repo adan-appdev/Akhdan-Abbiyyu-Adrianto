@@ -6,7 +6,6 @@ import project11 from "../assets/project11.jpg";
 import project12 from "../assets/project12.jpg";
 import project1 from "../assets/project1.jpg";
 import project2 from "../assets/project2.jpg";
-import project3 from "../assets/project3.jpg";
 import project4 from "../assets/project4.jpg";
 import project5 from "../assets/project5.jpg";
 import project6 from "../assets/project6.jpg";
@@ -53,12 +52,7 @@ export default function Projects() {
       repo: "https://github.com/adan-appdev/coffe-shop-kalcer",
       title: "Coffee Shop",
     },
-    {
-      image: project3,
-      demo: "https://portofolio-next-js-adan.vercel.app/",
-      repo: "https://github.com/adan-appdev/portofolio-next-js",
-      title: "Simple Portfolio",
-    },
+
     {
       image: project4,
       demo: "https://ui-yumit.vercel.app/",
